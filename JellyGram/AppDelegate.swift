@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        // configuration of using Parse code in Heroku
+        let parseConfig = ParseClientConfiguration{ (ParseMutableClientConfiguration) in
+            // acessing Heroku App via id & keys
+            ParseMutableClientConfiguration.applicationId = "jellygramarstarstarstasrt"
+            ParseMutableClientConfiguration.clientKey = "jellygramAOYUSNTYOUAHTAOYUN"
+            ParseMutableClientConfiguration.server = "http://jellygram.herokuapp.com/parse"
+        }
+
+        Parse.initialize(with: parseConfig)
         return true
     }
 
