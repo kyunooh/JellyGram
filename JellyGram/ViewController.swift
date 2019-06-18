@@ -13,27 +13,38 @@ class ViewController: UIViewController {
 
     // UI element storing some image
     @IBOutlet weak var picture: UIImageView!
+    @IBOutlet weak var senderLbl: UILabel!
+    @IBOutlet weak var receiverLbl: UILabel!
+    @IBOutlet weak var messageLbl: UILabel!
+    let message = String()
+    let receiver = String()
+    let sender = String()
+    let file = [PFFileObject]()
     
     // first launching functino when app is loaded and shown
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        // unwrap / take image file data from UIImageView
-        let pictureData = picture.image?.jpegData(compressionQuality: 0.5)
-        
-        let file = PFFileObject (name: "picture.jpg", data: pictureData!)
-        
-        // Creat a class / collection / table in Heroku
-        // PFObject - to create table or some data in table
-        let table = PFObject(className: "message")
-        table["seinder"] = "Akhmed"
-        table["receiver"] = "Jelly"
-        table["picture"] = file
-        table.saveInBackground { (success: Bool, error:Error?) in
-            if success {
-                print("Saved in server")
-            } else {
+        let information = PFQuery(className: "messages")
+        information.findObjectsInBackground{ (objects:[PFObject]?, error: Error?) in
+            if error == nil {
+                for object in objects! {
+                    self.messageLbl.text = object["message"] as! String
+                    self.receiverLbl.text = object["receiver"] as! String
+                    self.senderLbl.text = object["seinder"] as! String
+                    if let imageFromParse = object["picture"] as? PFFileObject {
+                        imageFromParse.getDataInBackground(block: { (data: Data?, error: Error?) in
+                            if error == nil {
+                                if data != nil {
+                                    self.picture.image = UIImage(data: data!)
+                                }
+                            }
+                        })
+                    }
+                }
+                    
+                } else {
                 print(error)
             }
         }
