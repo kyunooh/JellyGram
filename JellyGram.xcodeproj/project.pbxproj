@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A15092F422B7E7C700F60199 /* KakaoTalk_Photo_2019-06-17-21-39-27.png in Resources */ = {isa = PBXBuildFile; fileRef = A15092F322B7E7C700F60199 /* KakaoTalk_Photo_2019-06-17-21-39-27.png */; };
+		A15A120922BA400B00DFDBD3 /* JellyGramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A120822BA400B00DFDBD3 /* JellyGramViewController.swift */; };
+		A15A120B22BA413F00DFDBD3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A120A22BA413F00DFDBD3 /* Post.swift */; };
 		A1815A5322B535D300FE6B3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1815A5222B535D300FE6B3B /* AppDelegate.swift */; };
-		A1815A5522B535D300FE6B3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1815A5422B535D300FE6B3B /* ViewController.swift */; };
 		A1815A5822B535D300FE6B3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1815A5622B535D300FE6B3B /* Main.storyboard */; };
 		A1815A5A22B535D400FE6B3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1815A5922B535D400FE6B3B /* Assets.xcassets */; };
 		A1815A5D22B535D400FE6B3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1815A5B22B535D400FE6B3B /* LaunchScreen.storyboard */; };
@@ -48,9 +49,10 @@
 
 /* Begin PBXFileReference section */
 		A15092F322B7E7C700F60199 /* KakaoTalk_Photo_2019-06-17-21-39-27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KakaoTalk_Photo_2019-06-17-21-39-27.png"; sourceTree = "<group>"; };
+		A15A120822BA400B00DFDBD3 /* JellyGramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JellyGramViewController.swift; sourceTree = "<group>"; };
+		A15A120A22BA413F00DFDBD3 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		A1815A4F22B535D300FE6B3B /* JellyGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JellyGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1815A5222B535D300FE6B3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1815A5422B535D300FE6B3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1815A5722B535D300FE6B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1815A5922B535D400FE6B3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1815A5C22B535D400FE6B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -137,12 +139,13 @@
 			isa = PBXGroup;
 			children = (
 				A1815A5222B535D300FE6B3B /* AppDelegate.swift */,
-				A1815A5422B535D300FE6B3B /* ViewController.swift */,
 				A1815A5622B535D300FE6B3B /* Main.storyboard */,
 				A15092F322B7E7C700F60199 /* KakaoTalk_Photo_2019-06-17-21-39-27.png */,
 				A1815A5922B535D400FE6B3B /* Assets.xcassets */,
 				A1815A5B22B535D400FE6B3B /* LaunchScreen.storyboard */,
 				A1815A5E22B535D400FE6B3B /* Info.plist */,
+				A15A120822BA400B00DFDBD3 /* JellyGramViewController.swift */,
+				A15A120A22BA413F00DFDBD3 /* Post.swift */,
 			);
 			path = JellyGram;
 			sourceTree = "<group>";
@@ -316,7 +319,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1815A5522B535D300FE6B3B /* ViewController.swift in Sources */,
+				A15A120B22BA413F00DFDBD3 /* Post.swift in Sources */,
+				A15A120922BA400B00DFDBD3 /* JellyGramViewController.swift in Sources */,
 				A1815A5322B535D300FE6B3B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
