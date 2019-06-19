@@ -19,14 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
         // configuration of using Parse code in Heroku
-        let parseConfig = ParseClientConfiguration{ (ParseMutableClientConfiguration) in
-            // acessing Heroku App via id & keys
-            ParseMutableClientConfiguration.applicationId = "jellygramarstarstarstasrt"
-            ParseMutableClientConfiguration.clientKey = "jellygramAOYUSNTYOUAHTAOYUN"
-            ParseMutableClientConfiguration.server = "http://jellygram.herokuapp.com/parse"
-        }
-
-        Parse.initialize(with: parseConfig)
         return true
     }
 
