@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0293523C3A2467FB6F2B522E /* Pods_JellyGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1749FDBE63AC0D201ED2E551 /* Pods_JellyGram.framework */; };
+		751E9AD918EA283407FF0183 /* Pods_JellyGramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B478D5CF60F6048EF0B1A26A /* Pods_JellyGramTests.framework */; };
 		A15092F422B7E7C700F60199 /* KakaoTalk_Photo_2019-06-17-21-39-27.png in Resources */ = {isa = PBXBuildFile; fileRef = A15092F322B7E7C700F60199 /* KakaoTalk_Photo_2019-06-17-21-39-27.png */; };
 		A15A120922BA400B00DFDBD3 /* JellyGramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A120822BA400B00DFDBD3 /* JellyGramViewController.swift */; };
 		A15A120B22BA413F00DFDBD3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15A120A22BA413F00DFDBD3 /* Post.swift */; };
@@ -28,6 +30,7 @@
 		A1815A9422B53D9700FE6B3B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1815A9322B53D9700FE6B3B /* SystemConfiguration.framework */; };
 		A1815A9B22B53F0000FE6B3B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1815A9922B53EFF00FE6B3B /* Bolts.framework */; };
 		A1815A9C22B53F0000FE6B3B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1815A9A22B53F0000FE6B3B /* Parse.framework */; };
+		E901C7177638C27CF834FE81 /* Pods_JellyGramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E887328770771FB74A0F96 /* Pods_JellyGramUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +51,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		104DABB4023167428BCEA5B2 /* Pods-JellyGramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JellyGramUITests.release.xcconfig"; path = "Target Support Files/Pods-JellyGramUITests/Pods-JellyGramUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1749FDBE63AC0D201ED2E551 /* Pods_JellyGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JellyGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		244DCF87372E78B68569E763 /* Pods-JellyGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JellyGram.debug.xcconfig"; path = "Target Support Files/Pods-JellyGram/Pods-JellyGram.debug.xcconfig"; sourceTree = "<group>"; };
+		628A6BF272D5982447260A49 /* Pods-JellyGramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JellyGramTests.debug.xcconfig"; path = "Target Support Files/Pods-JellyGramTests/Pods-JellyGramTests.debug.xcconfig"; sourceTree = "<group>"; };
+		65837CCBFA5A91001324A502 /* Pods-JellyGramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JellyGramUITests.debug.xcconfig"; path = "Target Support Files/Pods-JellyGramUITests/Pods-JellyGramUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A15092F322B7E7C700F60199 /* KakaoTalk_Photo_2019-06-17-21-39-27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KakaoTalk_Photo_2019-06-17-21-39-27.png"; sourceTree = "<group>"; };
 		A15A120822BA400B00DFDBD3 /* JellyGramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JellyGramViewController.swift; sourceTree = "<group>"; };
-		A15A120A22BA413F00DFDBD3 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		A15A120A22BA413F00DFDBD3 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Post.swift; path = ../../../../../../../../workspace/JellyGram/JellyGram/Post.swift; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1815A4F22B535D300FE6B3B /* JellyGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JellyGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1815A5222B535D300FE6B3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1815A5722B535D300FE6B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,6 +83,10 @@
 		A1815A9322B53D9700FE6B3B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A1815A9922B53EFF00FE6B3B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		A1815A9A22B53F0000FE6B3B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		AD5122788A4AE1B7F98483AA /* Pods-JellyGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JellyGram.release.xcconfig"; path = "Target Support Files/Pods-JellyGram/Pods-JellyGram.release.xcconfig"; sourceTree = "<group>"; };
+		B478D5CF60F6048EF0B1A26A /* Pods_JellyGramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JellyGramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4E887328770771FB74A0F96 /* Pods_JellyGramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JellyGramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E096601640F531AC232F5CCE /* Pods-JellyGramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JellyGramTests.release.xcconfig"; path = "Target Support Files/Pods-JellyGramTests/Pods-JellyGramTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,7 @@
 				A1815A8422B53D4C00FE6B3B /* libz.tbd in Frameworks */,
 				A1815A9C22B53F0000FE6B3B /* Parse.framework in Frameworks */,
 				A1815A8222B53D4600FE6B3B /* libsqlite3.tbd in Frameworks */,
+				0293523C3A2467FB6F2B522E /* Pods_JellyGram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				751E9AD918EA283407FF0183 /* Pods_JellyGramTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E901C7177638C27CF834FE81 /* Pods_JellyGramUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +137,7 @@
 				A1815A7122B535D400FE6B3B /* JellyGramUITests */,
 				A1815A5022B535D300FE6B3B /* Products */,
 				A1815A8022B53D4600FE6B3B /* Frameworks */,
+				D2F28F261D163E2D362BB2DF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -183,8 +199,24 @@
 				A1815A8522B53D5300FE6B3B /* AudioToolbox.framework */,
 				A1815A8322B53D4C00FE6B3B /* libz.tbd */,
 				A1815A8122B53D4600FE6B3B /* libsqlite3.tbd */,
+				1749FDBE63AC0D201ED2E551 /* Pods_JellyGram.framework */,
+				B478D5CF60F6048EF0B1A26A /* Pods_JellyGramTests.framework */,
+				D4E887328770771FB74A0F96 /* Pods_JellyGramUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2F28F261D163E2D362BB2DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				244DCF87372E78B68569E763 /* Pods-JellyGram.debug.xcconfig */,
+				AD5122788A4AE1B7F98483AA /* Pods-JellyGram.release.xcconfig */,
+				628A6BF272D5982447260A49 /* Pods-JellyGramTests.debug.xcconfig */,
+				E096601640F531AC232F5CCE /* Pods-JellyGramTests.release.xcconfig */,
+				65837CCBFA5A91001324A502 /* Pods-JellyGramUITests.debug.xcconfig */,
+				104DABB4023167428BCEA5B2 /* Pods-JellyGramUITests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1815A7722B535D400FE6B3B /* Build configuration list for PBXNativeTarget "JellyGram" */;
 			buildPhases = (
+				5390BF8818D4985559572C82 /* [CP] Check Pods Manifest.lock */,
 				A1815A4B22B535D300FE6B3B /* Sources */,
 				A1815A4C22B535D300FE6B3B /* Frameworks */,
 				A1815A4D22B535D300FE6B3B /* Resources */,
+				6FA3A683DA89A2C563BF46FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,6 +245,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1815A7A22B535D400FE6B3B /* Build configuration list for PBXNativeTarget "JellyGramTests" */;
 			buildPhases = (
+				A8B1B05F2482DEADD1D8BBE4 /* [CP] Check Pods Manifest.lock */,
 				A1815A5F22B535D400FE6B3B /* Sources */,
 				A1815A6022B535D400FE6B3B /* Frameworks */,
 				A1815A6122B535D400FE6B3B /* Resources */,
@@ -229,6 +264,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1815A7D22B535D400FE6B3B /* Build configuration list for PBXNativeTarget "JellyGramUITests" */;
 			buildPhases = (
+				8282E52A6AEF17C374E23154 /* [CP] Check Pods Manifest.lock */,
 				A1815A6A22B535D400FE6B3B /* Sources */,
 				A1815A6B22B535D400FE6B3B /* Frameworks */,
 				A1815A6C22B535D400FE6B3B /* Resources */,
@@ -313,6 +349,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5390BF8818D4985559572C82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JellyGram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FA3A683DA89A2C563BF46FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JellyGram/Pods-JellyGram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JellyGram/Pods-JellyGram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JellyGram/Pods-JellyGram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8282E52A6AEF17C374E23154 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JellyGramUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8B1B05F2482DEADD1D8BBE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JellyGramTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1815A4B22B535D300FE6B3B /* Sources */ = {
@@ -494,6 +616,7 @@
 		};
 		A1815A7822B535D400FE6B3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244DCF87372E78B68569E763 /* Pods-JellyGram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -515,6 +638,7 @@
 		};
 		A1815A7922B535D400FE6B3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD5122788A4AE1B7F98483AA /* Pods-JellyGram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +660,7 @@
 		};
 		A1815A7B22B535D400FE6B3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 628A6BF272D5982447260A49 /* Pods-JellyGramTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -556,6 +681,7 @@
 		};
 		A1815A7C22B535D400FE6B3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E096601640F531AC232F5CCE /* Pods-JellyGramTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -576,6 +702,7 @@
 		};
 		A1815A7E22B535D400FE6B3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65837CCBFA5A91001324A502 /* Pods-JellyGramUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -595,6 +722,7 @@
 		};
 		A1815A7F22B535D400FE6B3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 104DABB4023167428BCEA5B2 /* Pods-JellyGramUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

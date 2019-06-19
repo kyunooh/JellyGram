@@ -1,0 +1,6 @@
+framework module Pods_JellyGram {
+  umbrella header "Pods-JellyGram-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireObjectMapper
 
 class JellyGramViewController: UITableViewController {
+
+    var posts: [Post] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        Alamofire.request("http://jellyms.kr/JellyGram-dummy/posts.json").responseArray {  (response: DataResponse<[Post]>) in
+            self.posts = response.result.value!
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,7 +36,7 @@ class JellyGramViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 2
     }
 
     /*
