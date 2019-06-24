@@ -17,10 +17,14 @@ class JellyGramViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Alamofire.request("http://jellyms.kr/JellyGram-dummy/posts.json").responseArray {  (response: DataResponse<[Post]>) in
+        Alamofire.request("https://jsonplaceholder.typicode.com/posts").responseArray {  (response: DataResponse<[Post]>) in
             self.posts = response.result.value!
-            self.tableView.rowHeight = 500
-            self.tableView.reloadData()
+            self.posts.forEach {(post: Post) in
+                Alamofire.request("https://jsonplaceholder.typicode.com/users/\(Int(post.userId))").responseObject { (response: DataResponse<User>) in
+                    post.username = response.result.value!.username
+                    self.tableView.reloadData()
+                }
+            }
         }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -46,10 +50,9 @@ class JellyGramViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell
         
         let post = posts[indexPath.row]
-        cell.profileImage.downloadImageFrom(post.profile, contentMode: .scaleToFill)
+
         cell.usernameLabel.text = post.username
-        cell.locationLabel.text = post.location
-        cell.postImage.downloadImageFrom(post.image, contentMode: .scaleToFill)
+        cell.contentLbl.text = post.body
         
         return cell
     }

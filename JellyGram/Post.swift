@@ -10,23 +10,20 @@ import Foundation
 import ObjectMapper
 
 class Post: Mappable {
-    var id: Int?
-    var image: String!
-    var content: String!
-    var username: String!
-    var location: String?
-    var profile: String!
+    var userId: Int!
+    var id: Int!
+    var title: String!
+    var body: String!
+    var username: String?
     
     required init?(map: Map) {
         
     }
     
     func mapping(map: Map) {
+        userId <- map["userId"]
         id <- map["id"]
-        image <- map["image"]
-        content <- map["content"]
-        username <- map["username"]
-        location <- map["location"]
-        profile <- map["profile"]
+        title <- map["title"]
+        body <- map["body"]
     }
 }
