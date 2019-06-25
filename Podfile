@@ -7,9 +7,11 @@ target 'JellyGram' do
   
 
   # Pods for JellyGram
-  pod 'ObjectMapper', '~> 3.4'
-  pod 'Alamofire', '~> 4.8.2'
-  pod 'AlamofireObjectMapper', '~> 5.2'
+  pod 'RxCocoa'
+  pod 'Moya-ModelMapper/RxSwift'
+  pod 'RxOptional'
+  pod 'RxSwift'
+
 
   target 'JellyGramTests' do
     inherit! :search_paths

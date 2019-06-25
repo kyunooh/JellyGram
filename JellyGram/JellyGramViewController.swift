@@ -9,14 +9,36 @@
 import UIKit
 import Alamofire
 import AlamofireObjectMapper
+import RxCocoa
+import RxSwift
+
 
 class JellyGramViewController: UITableViewController {
-
     var posts: [Post] = []
 
+    let manager = SessionManager.default
+    let POSTS_URL = "https://jsonplaceholder.typicode.com/posts"
+    let USERS_URL = "https://jsonplaceholder.typicode.com/users/"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setupRx()
+        
+        _ = manager.rx.request(.get, POSTS_URL)
+            .validate(statusCode: 200 ..< 300)
+            .validate(contentType: ["text/json"])
+            .flatMap { request -> Observable<(String?, RxProgress)> in
+                let stringPart = request.rx
+                    .string()
+                    .map { d -> String? in d }
+                    .startWith(nil as String?)
+                let progressPart = request.rx.progress()
+                return Observable.combineLatest(stringPart, progressPart) { ($0, $1) }
+            }
+            .observeOn(MainScheduler.instance)
+            .subscribe { print($0) }
+        
         Alamofire.request("https://jsonplaceholder.typicode.com/posts").responseArray {  (response: DataResponse<[Post]>) in
             self.posts = response.result.value!
             self.posts.forEach {(post: Post) in
@@ -26,11 +48,10 @@ class JellyGramViewController: UITableViewController {
                 }
             }
         }
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    func setupRx() {
+        
     }
 
     // MARK: - Table view data source
